@@ -1,5 +1,3 @@
-import time
-
 #This is my functions for basic math calculations
 def Addition(number1, number2):
     return int(number1) + int(number2)
@@ -15,7 +13,7 @@ def Division(number1, number2):
 
 #Function for matching user input with propper math function
 def userInputMatching(argument, number1, number2):
-    #Varible for capturing result
+    #Variable for capturing result
     result = 0
 
     #Switch case

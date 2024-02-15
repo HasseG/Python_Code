@@ -1,5 +1,7 @@
-#Importing the function file
+#Imports
 from Functions import *
+import time
+
 
 #Print welcome message and choice menu
 print("Welcome to my calculator!\nChoose a operator:\n")
