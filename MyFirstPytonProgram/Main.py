@@ -19,7 +19,7 @@ print("\nOperator chosen...")
 time.sleep(1)
 
 #User input for first number
-print("\nEnter first numer: ")
+print("\nEnter first number: ")
 userChosenNumber1 = input()
 
 #User input for second number
