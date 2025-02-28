@@ -81,7 +81,7 @@ class CraftView(discord.ui.View):
         new_embed.color = discord.Color.yellow()
         
         await interaction.response.edit_message(
-            content="🔓 @everyone This crafting order has been unlocked!",
+            content="🔓 This crafting order has been unlocked!",
             embed=new_embed,
             view=self  # Keep the buttons so the form can be locked again
         )
@@ -190,7 +190,7 @@ async def create_crafting_order(interaction: discord.Interaction):
 
         view = CraftView(interaction.user)
         # Send the final response after all input is gathered
-        await interaction.followup.send(content=":unlock: @everyone A new crafting order has been created!", embed=response_embed, view=view)
+        await interaction.followup.send(content=":unlock: A new crafting order has been created!", embed=response_embed, view=view)
 
         await dm_channel.send(f"You're order has successfully been created in {interaction.channel}")
 
